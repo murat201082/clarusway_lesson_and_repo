@@ -7,7 +7,7 @@
     <title>form element</title>
 </head>
 <body>
-    <form action="">
+    <form action="result.html">
         <h1>Sizi Tanıyalım!!!</h1>
 
         <!-- İnput Text Password -->
@@ -60,7 +60,7 @@
                     <td>
             
             <label for="yas">Yaşınız:</label> </td>
-        <td> <input type="number" name="yas" id="yas" min="7" max="70">
+        <td> <input type="number" name="yas" id="yas" min="7" max="70" required>
         
         </td>
     </tr> 
@@ -85,7 +85,7 @@
         <div>
             <h3>E-Mail</h3>
             <label for="e-posta">E-mail</label>
-            <input type="email" name="email" id="e-posta" placeholder="asddd@example.com">
+            <input type="email" name="email" id="e-posta" placeholder="asddd@example.com" required>
         </div>
         <div>
             <h3>Renk Adı</h3>
@@ -98,13 +98,22 @@
             <input type="tel" name="phone" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="xxx-xxx-xx-xx">
         </div>
       <div>
-          <label for="">Hangi Tatlıyı Seversiniz?</label>
-          <select name="" id="">
+          <h3>Hangi Tatlıyı Seversiniz</h3>
+          <label for="tatlı">Hangi Tatlıyı Seversiniz?</label>
+          <select name="" id="tatlı">
               <option value="">Sütlaç</option>
               <option value="">Baklava</option>
               <option value="">Kadayıf Dolması</option>
               <option value="">Künefe</option>
           </select>
+      </div>
+      <div>
+          <h3>Doğum Tarihi Seçiniz</h3>
+          <label for="dogum">Doğum Tarihi Seçiniz</label>
+          <input type="date" name="date" id="dogum" min="2020-04-2020" max="2025-05-20" value="2020-10-12">
+          <br>
+          <input type="reset" value="Temizle">
+          <input type="submit" value="Onayla">
       </div>
 
 
