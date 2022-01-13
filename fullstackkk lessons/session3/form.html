@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elements go on</title>
+  </head>
+  <body>
+    <form action="result.html" method="get" name="myform" >
+      <div>
+        <label for="cars"> Choose A Car</label>
+        <br />
+        <select name="cars-select" id="cars" size="4" multiple required>
+          <optgroup label="expensive_cars">
+            <option value="porche">Porche</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="mclaren">Mclaren</option>
+            <option value="masserati">Masserati</option>
+          </optgroup>
+          <optgroup label="Tüplü ve öfkeli">
+            <option value="kartal">Kartal 88</option>
+            <option value="lada" selected>Lada Samara</option>
+            <option value="murat-131">Murat 131</option>
+            <option value="tempra">Tempra</option>
+           
+          </optgroup>
+        </select>
+      </div>
+      <br /><br />
+      <div>
+        <label for="message"> Enter Your Comment Here</label>
+        <br />
+        <!-- <textarea name="comment" id="message" cols="30" rows="10">Buraya görüşlerinizi girebilirsiniz</textarea> -->
+        <textarea
+          name="comment"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Buraya görüşlerinizi girebilirsiniz"
+          maxlength="10"
+          style="resize: none"
+        ></textarea>
+        <br />
+        <br />
+        <div>
+          <label for="mybrowser">Browser</label>
+          <br />
+          <input
+            type="text"
+            name="browser-option"
+            id="mybrowser"
+            list="browsers"
+            required
+          />
+          <datalist id="browsers" >
+            <option value="chrome"></option>
+            <option value="safari"></option>
+            <option value="opera"></option>
+            <option value="mozilla"></option>
+            <option value="opera"></option>
+            <option value="a"></option>
+            <option value="b"></option>
+            <option value="c"></option>
+          </datalist>
+        </div>
+        <br /><br /><br />
+      </div>
+      <fieldset>
+        <legend>Personal İnfo:</legend>
+        <label for="firstname">First Name</label>
+        <input type="text" name="name" id="firstname" placeholder="Ethan" />
+        <br /><br />
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lname" id="lastname" placeholder="ethanss" />
+      </fieldset>
+      <br /><br />
+      <input type="submit" value="SEND" />
+      <br><br>
+      <span>İnline</span>
+      <span>REALY İNLİNE</span>
+    </form>
+  </body>
+</html>
