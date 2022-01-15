@@ -20,7 +20,7 @@ body, ul, li, h1, h2, a{
     color: white;
     border: 8px solid white;
     display: inline-block;
-    padding: 6px 12px;
+    padding: 10px 18px;
     border-radius: 36px;
   }
   .banner{
@@ -89,7 +89,7 @@ body, ul, li, h1, h2, a{
     position: relative;
   }
   .images li:hover{
-    top: -4px;
+    top: -9px;
   }
   .images li img{
     width: 90%;
