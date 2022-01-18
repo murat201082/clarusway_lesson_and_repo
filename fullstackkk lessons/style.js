@@ -10,6 +10,9 @@
         document.write("murats <br/>");
         document.write("murats <br/>");
         document.write("murats <br/>");
+        var mynumber = 5;
+        var mynumbers = 19; 
+        document.write(mynumber+mynumbers);
         
       
         

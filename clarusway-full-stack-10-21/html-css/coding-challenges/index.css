@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 1.5rem;
+}
+h1{
+    font-size: 1.5rem;
+  
+}
+input{
+    margin-top: 15px;
+    font-size: 1rem;
+    padding: 5px;
+
+}
+p{
+    font-size: 1.5rem;
+}
+select{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+
+}
+.comments{
+    margin-top: 15px;
+
+}
+textarea{
+    margin-top: 15px;
+}
+input[type="submit"]{
+    font-size: 0.9rem;
+    padding: 0;
+    opacity: 0.8;
+}
+#opt{
+
+}
+.radio label,
+.fav1 label{
+    font-size: 1.5rem;
+}
+
+
