@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box1{
+            background-color: brown;
+            width: 200px;
+            height: 200px;
+            border: solid;
+            position: static;
+            
+        }
+        .box2{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border: solid;
+            position: relative;
+            top: 101px;
+            left: 30px;
+        }
+        .box3{
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            border: solid;
+            position: absolute;
+            top: 101px;
+            left: 30px;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <!-- absolute sayfanın başına göre konum alır -->
+    <!-- relative ise yanındakilere göre position alır -->
+    
+</body>
+</html>
