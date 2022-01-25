@@ -1,0 +1,3 @@
+and= && x < 5 && y > 3 // false
+or=|| x == y //true
+not = ! 5 != 3 // true

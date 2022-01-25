@@ -1,0 +1,5 @@
+camel case baş harflari büyük olan kelime grubuna camel case denir.
+kelimeler arası alt çizgi konulursa snake case denir.
+kebap case ara lara tire işareti konulursa kebap case olur
+screming snake case ise büyük harf ve alt çizgi olana denir.
+javascript 15 basamaktan sonra doğruluk garantisi vermiyor
