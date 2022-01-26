@@ -21,6 +21,9 @@
             border-radius: 8px;
             
         }
+        button:hover{
+            background-color: darkkhaki;
+        }
         form{
             text-align: center;
             border-width: 1px;
@@ -72,6 +75,9 @@
             border-radius: 0px;
             color: white;
         }
+        #sign:hover{
+            background-color: darkred;
+        }
         #sag1,#sag2{
             position: relative;
             right: 250px;
@@ -92,6 +98,11 @@
             left: 845px;
            
         }
+        #dort:hover{
+            background-color: rgb(235, 224, 224);
+            border-radius: 50px;
+            
+        }
 
 
     </style>
@@ -99,26 +110,26 @@
 <body>
     <nav>
     <div id="about">
-        <h4 class="sol">About</h4>
-        <h4 class="sol">Store</h4>
+        <h4 class="sol"><a href="#" > About</a></h4>
+        <h4 class="sol"><a href="#">Store</a> </h4>
 
     </div>
     <div>
-        <h4 class="sag" id="sag1">Gmail</h4>
-        <h4 class="sag" id="sag2">Images</h4>
+        <h4 class="sag" id="sag1"> <a href="">Gmail</a> </h4>
+        <h4 class="sag" id="sag2"><a href="">Images</a> </h4>
         
     </div>
     <div>
         <button id="sign" class="sag">Sign In</button>
     </div>
     <div>
-        <img src="./images/appicon.png" alt="icon-menü" class="sag">
+        <img src="./images/appicon.png" alt="icon-menü" class="sag" id="dort">
     </div>
     
 </nav>
 <article>
     <div id="gog">
-        <img src="./images/googlelogo.png" alt="">
+        <img src="./images/googlelogo.png" alt="" style="columns: auto;">
     </div>
     <div id="text">
         <form action="#" method="get">
