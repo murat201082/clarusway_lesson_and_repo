@@ -1,0 +1,125 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body,html{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: #666;
+    position: fixed;
+    overflow: auto;
+    
+}
+div{
+    
+#div1{
+   
+    background-color: black;
+    padding: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline: 0.5rem inset purple;
+    outline-offset: 1rem;
+    line-height: 5rem;
+    width: 400px;
+    margin: auto;
+     
+    position: fixed;
+    margin-top: 200px;
+    margin-left: 400px;
+    
+
+    
+    
+    
+       
+}
+#h11{
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    color: white;
+  
+}
+#resim1{
+    display: flex;
+}
+#resim11{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.7;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+    #div2{
+        background-color: rgb(241, 241, 241);
+        color: #666;
+        text-align: center;
+        padding: 3rem 5rem;
+       
+}
+     #div4{
+        background-color: rgb(241, 241, 241);
+        color: #666;
+        text-align: center;
+        padding: 3rem 5rem;
+        
+     }
+
+     #div6{
+        background-color: rgb(241, 241, 241);
+        color: #666;
+        text-align: center;
+        padding: 3rem 5rem;
+        
+     }
+     #div8{
+        background-color: rgb(241, 241, 241);
+        color: #666;
+        text-align: center;
+        padding: 3rem 5rem;
+        
+     }
+     #div5{
+   
+        background-color: black;
+        padding: 2rem;
+        border-top-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        outline: 0.5rem inset purple;
+        outline-offset: 1rem;
+        line-height: 5rem;
+        width: 400px;
+        margin: auto;
+         
+        position: fixed;
+        margin-top: 200px;
+        margin-left: 400px;
+        
+    
+        
+        
+        
+           
+    }
+    #h24{
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+        color: white;
+    }
+    
+    
+  
+   
+    
+    
+   
+    
+
+

@@ -1,0 +1,157 @@
+body {
+    background-color: #ddd;
+    color: black;
+}
+
+.box{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px; 
+    width: 1300px;
+    flex-wrap: wrap;
+   
+    
+   
+
+     
+
+}
+.box1{ 
+    border: 10px solid;
+    border-color: blue;
+    background-color: green;
+    width: 500px;
+    height: 100px;    
+    box-shadow: 10px 10px 10px;
+    text-align: center;
+    
+    
+    
+
+}
+h3{
+    position: relative;
+    top: 20px;
+}
+.nav1{
+    display: flex;
+    justify-content: right;
+   background-color: gray;
+   overflow: auto;
+   
+   
+   
+   
+}
+a{
+    color: white;
+}
+.item{
+    margin: 10px;
+    display: flex;
+    text-decoration: none;
+    
+    
+}
+@media screen {
+    #magic1{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:992px) {
+    body{
+        background-color:rgb(167, 167, 87);
+    }
+    a {
+        color: white;
+    }
+    #magic1{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    body{
+        background-color:orange;
+    }
+    a {
+        color: black;
+    }
+    .nav1{
+        justify-content: space-evenly;
+    }
+    .box{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 650px; 
+        width: 768px;
+        flex-wrap: wrap;
+    }
+        
+    .box1 { 
+        border: 10px solid;
+        border-color: blue;        
+           
+        
+        text-align: center;
+        
+        
+        
+    
+    }
+    #magic1{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-color:purple;
+    }
+    .nav1 {
+        flex-direction: column;
+        background-color: aqua;
+        align-items: center;
+        
+        
+        
+    }
+   
+    .box{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 650px; 
+        width: 600px;
+        flex-wrap: wrap;
+    }
+        
+    .box1 { 
+        border: 10px solid;
+        border-color: red;        
+        width: 250px;
+        height: 100px;    
+        background-color: purple;
+        text-align: center;
+        
+        
+        
+    
+    }
+    #magic1{
+        display:contents;
+        
+        
+    }
+    #magic{
+        display: none;
+        
+    }
+   
+    
+}
+  
