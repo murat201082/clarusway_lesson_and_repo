@@ -48,11 +48,11 @@ console.log(addTwo('4'));
 sayHello('mark')
 sayHello() */
 
-function sayHello(name = 'New User'){
+/* function sayHello(name = 'New User'){
     name && console.log(`Hello ${name}`);
 }
 sayHello('mark')
-
+ */
 
 /* function square(num1){
     num1 *= num1;
@@ -75,3 +75,17 @@ function f1(st) {
 f1(student);
 console.log(student); */
 //switch case hesap makinesi ödevi var
+/* let str ='Clarusway';
+console.log(str.length); */
+
+/* let str ='Clarusway';
+console.log(str[0]); */
+let str = 'Clarusway';
+
+for (let i = 0 ; i < str.length; i++){
+    console.log(str[i]);
+}
+
+let a = 4;
+let b = 5;
+a < b ? console.log('Hello') : console.log('noo');

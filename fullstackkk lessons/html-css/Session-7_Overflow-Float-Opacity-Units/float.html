@@ -31,10 +31,37 @@
       /* #parag1 {
         clear: both;
       } */
+      .ul2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       margin: 30px;
+        border-style: solid;
+        background-color: brown;
+        
+        padding: 30px;
+        list-style-type: none;
+        opacity: 0.7;
+
+
+      }
+      .ul2:hover{
+        opacity: 1;
+        color: yellow;
+        box-shadow: 10px 10px 10px;
+        border-radius: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+      
       li {
-        list-style: none;
+        list-style:none;
         float: left;
         padding-right: 10px;
+        
+      }
+      .flex{
+        clear: both;
       }
     </style>
   </head>
@@ -82,10 +109,14 @@
         exercitationem repellat?
       </p>
     </div>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
+    <div .flex></div>
+    <ul class="ul1">
+     <ul class="ul2">
+      <li  >Home</li>
+      <li >About</li>
       <li>Contact</li>
     </ul>
+    </ul>
+ 
   </body>
 </html>
