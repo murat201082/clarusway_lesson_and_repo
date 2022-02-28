@@ -1,0 +1,233 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article .article1, article .article2 {
+  width: 700px;
+  height: 200px;
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 10%;
+  padding: 10px;
+  margin: 2px;
+}
+
+article .article2 {
+  background-color: green;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+body {
+  background-color: pink;
+  font-family: "Bowlby One SC", "Lato", "Redressed", "Righteous", "Shizuru", sans-serif;
+  font-size: 1.2rem;
+  color: red;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #30a7c3;
+}
+
+nav .brand img {
+  width: 80px;
+  border: #30a7c3;
+  border-radius: 30%;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav .navbar {
+  margin: 10px;
+}
+
+nav .navbar ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav .navbar ul li a {
+  text-decoration: none;
+  padding: 5px;
+  color: black;
+  font-size: 1.2rem;
+}
+
+nav .navbar ul li input {
+  width: 70px;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #cc6699;
+}
+
+.slider .left {
+  margin-top: 20px;
+}
+
+.slider .left button {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: #30a7c3;
+  font-size: 1.2rem;
+  border: 2px solid gray;
+}
+
+.slider .left button:hover {
+  background-color: red;
+  border: 2px solid yellow;
+}
+
+.slider img {
+  width: 30%;
+}
+
+.content .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .cards .card1 {
+  background-color: gold;
+  color: black;
+  width: 25%;
+  height: 200px;
+  border: purple solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.content .card2 {
+  background-color: green;
+  color: black;
+  width: 25%;
+  height: 200px;
+  border: purple solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 0.8rem;
+}
+
+.content .card3 {
+  background-color: orange;
+  color: #5422c9;
+  width: 25%;
+  height: 200px;
+  border: purple solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 0.5rem;
+}
+
+.content .card4 {
+  background-color: #ad327e;
+  color: gray;
+  width: 25%;
+  height: 200px;
+  border: purple solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+}
+
+.socialBoxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socialBoxes .social1 {
+  width: 20%;
+  height: 100px;
+  background-color: #db8e00;
+}
+
+.socialBoxes .social2 {
+  width: 20%;
+  height: 100px;
+  background-color: #b87700;
+}
+
+.socialBoxes .social3 {
+  width: 20%;
+  height: 100px;
+  background-color: #946000;
+}
+
+.socialBoxes .social4 {
+  width: 20%;
+  height: 100px;
+  background-color: #704900;
+}
+
+.socialBoxes .social5 {
+  width: 20%;
+  height: 100px;
+  background-color: #4d3200;
+}
+
+.social1 {
+  color: #990000;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.social2 {
+  color: #55004e;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.social3 {
+  color: #0fa8a1;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.social4 {
+  color: #121456;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.social5 {
+  color: #64c217;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */

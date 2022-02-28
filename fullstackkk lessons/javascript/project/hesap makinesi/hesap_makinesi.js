@@ -1,24 +1,24 @@
 
-let number1 = +prompt("please enter your number : a")
-let number2 =+prompt( "please enter your number : b")
-let number3 = prompt("please enter your operation : +,-,/ or * ")
+let number1 = document.getElementById("number1").value;
+console.log(number1);
+/* let operand =document.getElementById("operand").value;
+let number3 = document.getElementById("number2").value;
 let result ;
-switch (number3) {
-    case '+':
-        result =number1 + number2
-        break;
-    case '-':
-        result =number1 - number2
-        break;
-    case '*':
-        result =number1 * number2
-        break;
-    case '/':
-        result =number1 / number2
-        break;
 
-    default:
-        result = "this is not number";
-        break;
-}
-console.log(result);
+let button = document.getElementById("button");
+button.addEventListener("change", ()=>{
+    if (operand == "+"){
+        result = number1 + number3
+    };else if (operand == "-"){
+        result = number1 - number3
+    }else if (operand == "*"){
+        result = number1 * number3
+    }else if (operand == "/"){
+        result = number1 / number3
+    }
+    else{
+        result = "this is not number"
+    }
+    document.write(result);
+});
+ */

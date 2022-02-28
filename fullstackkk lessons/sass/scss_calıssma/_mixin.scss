@@ -1,0 +1,12 @@
+//!Mixin tanımlamaları
+@mixin mybox($bgColor, $fontColor, $fontSize){
+    background-color: $bgColor;
+    color: $fontColor;
+    width: 25%;
+    height: 200px;
+    border: $myBorder;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: $fontSize;
+}

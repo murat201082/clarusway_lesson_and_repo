@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding:  10px;
+    
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px ;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px 70px;
+    gap: 10px;
+    grid-template-areas: "screen screen screen screen"
+    "screen screen screen screen";
+   border: 2px solid;
+   background-color: black;
+   border-radius: 20px;
+   /* width: 350px; */
+  
+   
+}
+#content1{
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content{
+    background-color: #9B9B9B;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    
+    
+    
+    
+}
+.content:active{
+    opacity: 0.7;
+}
+.content1{
+    grid-area: screen ;
+    background-color: black;
+    color:  white;
+    font-size: 50px;
+    font-weight: bold;
+    
+    
+    
+}
+.content2, .content3, .content4{
+    background-color: rgb(224, 218, 218);
+}
+.content5, .content9, .content13, .content17, .content20{
+    background-color: #F2930B;
+}
+.content18{
+    grid-column: 1/3;
+}
+
+/* .content2,  .content3,
+.content4,  .content5,
+.content6,  .content7,
+.content8,  .content9,
+.content10, .content11,
+.content12, .content13,
+.content14, .content15,
+.content16, .content17,
+.content18, .content19, 
+.content20 {
+    border: solid;
+} */
+/* .content2:active,  .content3:active,
+.content4:active,  .content5:active,
+.content6:active,  .content7:active,
+.content8:active,  .content9:active,
+.content10:active, .content11:active,
+.content12:active, .content13:active,
+.content14:active, .content15:active,
+.content16:active, .content17:active,
+.content18:active, .content19:active, 
+.content20:active {
+    opacity: 0.7;
+} */
+
+
+.content1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    }
+.content18{
+display: flex;
+justify-content: flex-start;
+padding: 25px;
+
+
+}

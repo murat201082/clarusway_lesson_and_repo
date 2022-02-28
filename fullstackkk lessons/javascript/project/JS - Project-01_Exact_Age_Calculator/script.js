@@ -5,16 +5,18 @@ const hours = document.querySelector("#hours");
 const minutes = document.querySelector("#minutes");
 const seconds = document.querySelector("#seconds");
 const countdown = document.querySelector("#countdown");
-// console.log(countdown);
+//console.log(countdown);
 
 const loading = document.querySelector(".loading");
 window.addEventListener("load", ()=>{
     loading.style.display = "block";
+  
     //miliseconds in setTimeout
     setTimeout(()=>{
         loading.style.display = "none";
         countdown.style.display = "flex";
-    }, 1000);
+    },200);
+    
     
     // years.innerHTML = "00";
     // months.innerHTML = "00";
@@ -53,15 +55,17 @@ window.addEventListener("load", ()=>{
 let selectedBirthday;
 let birthdayInput = document.querySelector("input[name=birthday]");
 birthdayInput.addEventListener("change", (event)=>{
-    console.log("dateString", event.target.value);
+   /*  console.log("dateString", event.target.value); */
     //event.target == birthdayInput
     //convert to date from dateString
-    selectedBirthday = new Date(event.target.value);
-    console.log("dateObject", selectedBirthday);
+    selectedBirthday = new Date(event.target.value);//tarih
+    console.log(selectedBirthday);
     if(selectedBirthday > new Date()){
         alert("Doğum tarihiniz bugünden büyük olamaz!!");
         return;
+    
     }
+    
     document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1467810563316-b5476525c0f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80')";
     
     setInterval(updateCountdown, 1000);
@@ -69,9 +73,9 @@ birthdayInput.addEventListener("change", (event)=>{
 });
 
 const updateCountdown = () =>{
-    let dobYear = selectedBirthday.getFullYear();
-    let dobMonth = selectedBirthday.getMonth();
-    let dobDay = selectedBirthday.getDate();
+    let dobYear = selectedBirthday.getFullYear();//1986
+    let dobMonth = selectedBirthday.getMonth();//10ay
+    let dobDay = selectedBirthday.getDate();//
     let dobHour = selectedBirthday.getHours();
     let dobMinute = selectedBirthday.getMinutes();
     let dobSecond = selectedBirthday.getSeconds();
@@ -85,7 +89,7 @@ const updateCountdown = () =>{
     let currentMinute = now.getMinutes();
     let currentSecond = now.getSeconds();
     
-    let yearOfAge = currentYear - dobYear;
+    let yearOfAge = currentYear - dobYear;//36
     let monthOfAge = currentMonth - dobMonth;
     let dayOfAge = currentDay - dobDay;
     let hourOfAge = currentHour - dobHour;
@@ -130,7 +134,7 @@ const updateCountdown = () =>{
 
     //Add values to DOM
 
-    years.innerHTML = yearOfAge.toString().padStart(2, "0");
+    years.innerHTML =yearOfAge .toString().padStart(2, "0");
     months.innerHTML = monthOfAge.toString().padStart(2, "0");
     days.innerHTML = dayOfAge.toString().padStart(2, "0");
     hours.innerHTML = hourOfAge.toString().padStart(2, "0");

@@ -1,0 +1,44 @@
+
+* {
+  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    background-color: aqua;
+  }
+  .container3 {
+    margin: 30px 50px;
+    border: 3px solid;
+    
+    
+  }
+  input[type="checkbox"]:checked::after {
+    background: red;
+    
+    
+  }
+  input[type="checkbox"]:checked::after {
+      /* Heres your symbol replacement */
+      content: "X";
+      color:yellow;
+      padding: 2px;
+      
+      
+    }
+    .h1{
+      color: red;
+      text-align: center;
+    }
+    .son{
+      color: red;
+      text-align: center;
+    }
+    .container1{
+    background-image: url(./10719203065906.jpg);
+  }
+  hr{
+    height: 5px;
+    
+    background-color: black;
+  }

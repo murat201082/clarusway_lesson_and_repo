@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>sayı artır/</title>
+    <script type="text/javascript">
+        function arttirma() {
+            var deger = parseInt(document.getElementById('sayi').value);
+           document.getElementById('sayi').value = deger + 1;
+       }
+       function sifirlama() {
+           document.getElementById('sayi').value = "0";
+       }
+       function azaltma() {
+           var deger = parseInt(document.getElementById('sayi').value);
+           document.getElementById('sayi').value = deger - 1;
+       }
+    </script>
+</head>
+<body>
+<input type="text" id="sayi" value="0" /><br />
+<input type="button" value="Arttır" id="arttir"  onclick="arttirma()"/>
+<input type="button" value="Sıfırla" id="sifirla" onclick="sifirlama()" />
+<input type="button" value="Azalt" id="azalt"  onclick="azaltma()"/>
+</body>
+</html>

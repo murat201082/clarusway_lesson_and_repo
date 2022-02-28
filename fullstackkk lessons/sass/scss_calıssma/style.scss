@@ -1,0 +1,125 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+@import "article";
+
+.container{
+    padding: 0 1rem;
+}
+ body{
+     background-color:$bgColor ;
+     font-family: $fontFamily;
+     font-size: $fontSize;
+     color:$color ;
+ }
+//!Nesting usage
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: $navBgColor;
+    .brand{
+        img{
+            width: 80px;
+            border: $navBgColor;
+            border-radius: 30%;
+            padding: 10px;
+            margin: 10px;
+        }
+    }
+    .navbar{
+        margin: 10px;
+        ul{
+            list-style-type: none;
+            display: flex;
+            li{
+                a{
+                    text-decoration: none;
+                    padding: 5px;
+                    color: black;
+                    font-size: $fontSize;
+                }
+                input{
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
+
+//! SLİDER NESTING
+.slider{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $sliderBgColor;
+    .left{
+        margin-top: 20px;
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            background-color: $navBgColor;
+            font-size: $fontSize;
+            border: 2px solid gray;
+            //!  IMPORTANT//
+            &:hover{
+                background-color: red;
+                border: 2px solid yellow;
+            }
+        }
+    }
+    img{
+        width: 30%;
+    }
+}
+//!Mixin Usage
+.content{
+    .cards{
+        display: flex;
+        .card1{
+            @include mybox(gold, black, 1.2rem)
+        }
+    }
+    .card2{
+        @include mybox(green, black, 0.8rem)
+    }
+    .card3{
+        @include mybox(orange, rgb(84, 34, 201), 0.5rem)
+    }
+    .card4{
+        @include mybox(rgb(173, 50, 126), gray, 1rem)
+    }
+}
+
+//!For Loop
+.socialBoxes{
+    display: flex;
+    @for $i from 1 through 5 {
+        .social#{$i}{
+            width: 20%;
+            height: 100px;
+            background-color: darken(orange, (($i * 7)));
+        }
+    }
+}
+
+//! ARRAY
+$textColor : #990000, #55004e, #0fa8a1, #121456, #64c217;
+@for $i from 1 through length($textColor){
+    .social#{$i}{
+        color: nth($textColor, $i);
+        font-size: $i * 1rem;
+        font-weight: 600;
+}
+};
+
+//!İf - Else
+$dark : 3;
+.footer{
+    @if $dark == 1{
+        background-color: white;
+    }@else if $dark == 2 {
+        background-color:gray ;
+    }@else{
+        background-color:green ;
+    }
+}

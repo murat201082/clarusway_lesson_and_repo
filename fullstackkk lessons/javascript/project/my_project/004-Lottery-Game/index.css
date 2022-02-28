@@ -1,0 +1,48 @@
+
+body{
+    background-image: url(./lottery.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+    
+    
+}
+
+
+.tum{
+    
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    color:rgb(15, 15, 15);
+    font-weight: 900;
+    color: white;
+}
+.sayılar{
+    width: 300px;
+}
+
+
+
+#yazma{
+    position:relative;
+    left: 500px;
+    width: 300px;
+    border: 5px solid;
+    background-color: black;
+    background-size: 100% 100%;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    box-shadow: 10px 10px 10px;
+  
+    
+    
+    
+    border-radius: 10px;
+}
+
+   
