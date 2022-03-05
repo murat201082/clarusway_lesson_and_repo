@@ -75,7 +75,7 @@ var selam = "Sanada Selam\"mark"
 console.log(Merhaba);
 console.log(selam);
  */
-console.log(Boolean(""));//False
+/* console.log(Boolean(""));//False
 console.log(Boolean(" "));//true
 console.log(Boolean(3<5));//true
 console.log(Boolean(3>5));//false
@@ -95,6 +95,25 @@ console.log(null === undefined);
 console.log(2 == '2');
 console.log(2 === '2');
 console.log(2 + + '2');
-console.log(2 +  '2');
+console.log(2 +  '2'); */
+let mur = [1,2,3,4,5,6];
+let sum = 1;
+for(let i = 1 ; i < mur.length +1;i++ ){
+sum *= i
+
+}
+let j = sum;
+let k = []
+for (let j = sum; j > 0; j--) {
+    
+   if( sum % j == 0){
+k.push(j)
+if (mur.length == k.length){
+    break
+}
+}
+    
+};
+console.log(k);
 
 

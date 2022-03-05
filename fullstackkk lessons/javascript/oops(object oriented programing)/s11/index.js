@@ -299,8 +299,9 @@ class people extends human{
         this.age = age;
         this.weight = weight;
   }
+ 
   getFullName(){
-    let fullName = `${this.name} ${this.surName} and my school ${this.school} and my age ${this.age} and my weight ${this.weight}`
+    let fullName = `${this.name} ${this.surName} and my school ${this.school} and my age ${this.age} and my weight ${this.weight} ${this.mood} ${this.married}`
     return fullName;
   }
   editName(newName){
@@ -310,7 +311,34 @@ this.surName = myName[1]
 this.school = myName[2]
   }
 }
-const person = new people("ali", "osman", "erciyes", 34, 42);
-console.log(person.getFullName());
+ class insan extends people{
+    constructor(name, surName, school, age,weight, mood, married){
+    super(name, surName, school, age,weight);
+    this.mood = mood;
+    this.married = married
+    
+  }
+  }
+  
+//const person = new people("ali", "osman", "erciyes", 34, 42);
+/* console.log(person.getFullName());
 person.editName("Murat sertkaya erciyes ");
-console.log(person.getFullName());
+console.log(person.getFullName()); */
+const ins = new insan("ali", "osman", "erciyes", 34, 42, "iyi", "false")
+ins.editName("Ali Enver Zafer");
+console.log(ins.getFullName());
+
+
+class veli{
+  constructor(names, surnames){
+    this.names = names;
+    this.surnames = surnames;
+    
+  }  
+  getFullNames(){
+      let beno = `hi my name is ${this.names} and my surname is ${this.surnames}`
+      return beno;
+    }
+  }
+    const bens = new veli("Ali", "Ekber");
+    console.log(bens.getFullNames());
