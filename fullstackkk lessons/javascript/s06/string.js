@@ -42,6 +42,8 @@ console.log(str.indexOf("o", 2)); */
 
 var str = "Lorem Ipsum is simply dummy text of the printing and typesetting industry.";
 var n = str.replace('Lorem', 'merhaba')
-console.log(n);
 
+const x = 6%2;
+const y = x ? "one ": "two";
+console.log(y);
 

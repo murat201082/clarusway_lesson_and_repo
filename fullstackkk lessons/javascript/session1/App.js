@@ -96,7 +96,7 @@ console.log(2 == '2');
 console.log(2 === '2');
 console.log(2 + + '2');
 console.log(2 +  '2'); */
-let mur = [1,2,3,4,5,6];
+/* let mur = [1,2,3,4,5,6];
 let sum = 1;
 for(let i = 1 ; i < mur.length +1;i++ ){
 sum *= i
@@ -116,4 +116,13 @@ if (mur.length == k.length){
 };
 console.log(k);
 
+ */
 
+let a = ["c", "d", "e", "f", "g", "h"];
+return(
+    <div>
+    {a.map((it)=>(
+        <p>{it}</p>
+    ))}
+    </div>
+);

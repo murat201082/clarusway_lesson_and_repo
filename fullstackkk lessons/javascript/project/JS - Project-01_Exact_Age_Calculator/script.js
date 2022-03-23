@@ -142,4 +142,19 @@ const updateCountdown = () =>{
     seconds.innerHTML = secondOfAge.toString().padStart(2, "0");
 
 
-}
+};
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+

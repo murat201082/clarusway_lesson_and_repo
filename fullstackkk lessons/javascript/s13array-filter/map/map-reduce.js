@@ -2,14 +2,18 @@
 // *                      FOREACH
 // *-----------------------------------------------------
 
-const students = ["Bedirhan", "Tuncay", "Mesut", "Enes", "Onur"];
+const students = ["Bedirhan", "Tuncay", "Mesut", "Enes", "Onur", "yasin"];
 
 //? 1.Method
-const print = (name) => {
+const print = (name)=>{
   console.log(name);
-};
+  
+}
 
 students.forEach(print);
+
+
+
 
 //? 2.Anynmous Method
 console.log("*******************************");
@@ -17,20 +21,19 @@ students.forEach((student) => console.log(student));
 
 //? Example
 const payments = [100, 300, -200, 500, -400, 225, 1000, -700];
-let sum = 0;
-payments.forEach((p) => (sum += p));
-console.log("SUM:", sum);
+let toplam = 0;
+payments.forEach((payment) => (toplam += payment));
+console.log(toplam);
 
 //! foreach doesnt return
 // const sumofPayments = payments.forEach((p) => (sum += p))
 // console.log(sumofPayments);
 
 //* Example
-payments.forEach((p, i) => {
-  p > 0
-    ? console.log(i + 1, `You deposit ${p}`)
-    : console.log(i + 1, `You withdraw ${p}`);
+payments.forEach((payment, i) => {
+  payment > 0 ? console.log(i+1, `you deposit${payment}`) : console.log(i + 1,`you withdraw ${payment}`);
 });
+
 
 //*-----------------------------------------------------
 //*                      MAP
@@ -95,10 +98,17 @@ const checkPalindrome = words.filter(
 console.log(checkPalindrome);
 
 //* Convert to uppercase palindromic items and print in the console
+const sıra = document.querySelector("#sıra");
 words
   .filter((word) => [...word].reverse().join("") === word)
   .map((word) => word.toLocaleUpperCase())
-  .forEach((word) => console.log(word));
+  .forEach((word) => sıra.innerHTML += `
+  <ul>
+  <li>
+     ${word} 
+  </li>
+</ul>` );
+  
 
 // *-----------------------------------------------------
 // *                      REDUCE
@@ -200,3 +210,60 @@ console.log(newPersonels);
 
 //*EXAMPLE9: Delete personel whose id is equals to 4;
 //* Exmple: deleteById(4)
+
+
+let a = [];
+let c= [];
+const ödeme = [100, 300, -200, 500, -400, 225, 1000, -700];
+ödeme.forEach((öde) => {
+  return öde > 0 ? a.push(öde*5) : c.push(öde) 
+});
+console.log(a);
+console.log(c);
+
+
+ let son = 0;
+a.forEach((b) => {
+  return( son += b);
+});
+console.log(son);
+
+ let son1 = 0;
+c.forEach((d) => {
+  return( son1 += d);
+});
+console.log(son1);
+
+console.log(son + son1);
+
+
+
+let notlar = [30,50,77,38,44,80,65,89,40 ];
+const nots = document.getElementById("not");
+notlar = notlar.map((x,i) => {
+  const yeniNotlar = (x <50 ? x * 1.2 : x * 1.1).toFixed()
+  return `${i +1}. Öğrencinin Notu ${yeniNotlar}` 
+  
+ 
+
+
+});
+ nots.style= "color : purple;";
+ nots.style.backgroundColor= "yellow";
+ nots.style.fontSize= "2rem";
+ nots.style.border= "dotted";
+
+const asy = notlar.map((a) =>{
+  nots.innerHTML += `  <li> ${a} </li>`
+  });
+console.log(notlar);
+
+const fsa = [6,5,4,3,2,1];
+
+const fac = fsa.reduce((x,y) =>  x*y, 1)
+  console.log(fac);
+
+
+
+
+
