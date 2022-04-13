@@ -1,0 +1,24 @@
+.navbar{
+    display:flex;
+    background-color:#CBDAE9;
+   padding:15px;
+}
+
+.nav1{
+ position: relative;
+ right: 1%;
+
+
+ 
+   
+    }
+.nav2{
+    position: relative;
+    left: 80%;
+  
+        
+    }
+
+.nav3{
+    text-decoration: none;
+}
