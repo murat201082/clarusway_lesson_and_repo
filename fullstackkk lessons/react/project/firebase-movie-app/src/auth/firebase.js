@@ -41,9 +41,11 @@ export const createUser = async (email, password, displayName, navigate) => {
       email,
       password
     );
+    
+    
     await updateProfile(auth.currentUser, {
-      displayName: displayName,
-    });
+      displayName: displayName
+    }) 
     navigate("/");
     console.log(userCredential);
   } catch (err) {
