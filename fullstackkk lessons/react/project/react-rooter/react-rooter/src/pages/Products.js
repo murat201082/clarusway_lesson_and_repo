@@ -22,8 +22,11 @@ const Products = () => {
             className={styles.product}
           >
             <h6>{each.category}</h6>
-            <p>{each.title}</p>
-            <img style={{ width: "100px" }} src={each.image} alt="" />
+            <p>{each.title}</p> 
+            
+            <img style={{ width: "100px" }} src={each.image} alt="" /> <br />
+            <span>{each.rating.count}</span> <br />
+            <span>{each.rating.rate}</span>
           </Link>
         ))}
       </div>
