@@ -1,0 +1,28 @@
+{% extends 'users/base.html' %} {% block content %}
+<h1>Clarusway Blog</h1>
+<div class="card" style="width: 18rem;">
+   
+    <img src="{{ image }}" class="card-img-top" alt="resim"/>
+    <h5 class="card-title"> Title </h5>
+
+    <h5 class="card-title"> {{ title }} </h5>
+    <div class="card-body">
+      <h5 class="card-title">Test</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Content</li>
+      <li class="list-group-item">{{ content }}</li>
+      
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div>
+<!-- {% if request.user.is_authenticated %}
+<h2 >Wellcome {{request.user}}!</h2>
+{% else %}
+<h2 class="welcome">Wellcome Guest!</h2> -->
+
+
+{% endif %} {% endblock content %}

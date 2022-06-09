@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "pyDjango",
+      "setup": "sudo -H  python -m pip install --upgrade pip pip install -r requirements.txt pip install pytest",
+      "run": "pytest",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 100
+    }
+  ]
+}

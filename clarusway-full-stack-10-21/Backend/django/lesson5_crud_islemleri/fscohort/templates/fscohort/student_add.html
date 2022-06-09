@@ -1,0 +1,14 @@
+{% extends 'fscohort/base.html' %}
+
+{% block container %}
+    <h2>Add Student</h2>
+    {% load crispy_forms_tags %}
+    <div class="container">
+    <form action="" method="POST" anctype="multipart/form-data" >
+        {% csrf_token %}                   
+        <!-- {{form.as_p}}						    -->
+        {{ form | crispy }}						   
+        <input type="submit" value="add">
+    </form>
+    </div>
+{% endblock container %}
